@@ -4,45 +4,45 @@ Cloud focused data services with dynamic querying, versioned schemas, and robust
 
 ![lightblue architecture](https://raw.githubusercontent.com/lightblue-platform/lightblue/master/docs/lightblue-puzzle.png "High Level Architecture")
 
-## Why lightblue?
+# Why lightblue?
 
 Developing enterprise services for access to data (CRUD) can be deceptively simple.  Just write something that gives access to the data you need.  Done!  The challenge is how do to deal with growth over time and not replicate the data access layer for every component.
 
-### Why is it so hard to add a new field?
+## Why is it so hard to add a new field?
 * Adding a field may break backwards compatibility for clients.
 * Updating all clients is not easy to schedule.
 * Creating new APIs on the service solves the above problems but leads to sprawling APIs and inconsistency.
 
-### Can we move our data to MongoDB?
+## Can we move our data to MongoDB?
 * Migrating from one type of tech to another is not trivial, such as RDBMS to NoSQL.
 * Moving some proprietary database technologies outside of a traditional datastore can be very costly.
 * Changes in underlying datastore will lead to optimized ways accessing the data.  This changes APIs!
 
-### Why is Information Security so concerned with moving to a cloud provider?
+## Why is Information Security so concerned with moving to a cloud provider?
 * When you control your data and application tier hardware it is easy to be lax with security.
 * Moving data and applications off of hardware you control requires robust security.
 * Enabling the move to public API access to even sensitive data requires a lot of rigor.
 
-### Do more with less!
+## Do more with less!
 * IT budgets are shrinking while business demands continue to rise.  Any place cost can be reduced relative to gains is great!
 
-### How does lightblue benefit developers?
+## How does lightblue benefit developers?
 One of the time sinks for developers is adding new features for clients of their software.  To address this for data access, lightblue provides a robust and very capable API, supports a growing number of datastores, and enables changes to data models without impacting existing clients through the use of versioned metadata.
 
-#### Robust API
+### Robust API
 The REST API of lightblue is designed to do everything a client could want.  There are some key points that the API addresses:
 * Query: a very rich query language
 * Projection: return only the data a client wants
 * Bulk Operations: ability execute CRUD operations against many records or entire collections
 
-#### Datastore Agnostic
+### Datastore Agnostic
 Clients do not care where data is stored as long as it is available and secure.  With lightblue we have controller implementations for:
 * MongoDB (1.9.0 and higher)
 * RDBMS (ANSI SQL92)
 
 Not seeing a contoller you need?  We welcome new implementations and contributions in general!  From opening a request for enhancement to writing code, your ideas and help are greatly appricated.
 
-#### Versioned Metadata
+### Versioned Metadata
 All data in lightblue is controlled by its metadata.  Think of this as all the DDL for a table in a relational database.  
 Data structures are maintained by metadata.  A specific version of this metadata provides a window to the stored data.  You can have many versions of metadata active at a time, providing different clients with different windows to this data.  Key points to remember:
 * all data structures are captured as metadata
@@ -52,7 +52,7 @@ Data structures are maintained by metadata.  A specific version of this metadata
 
 <insert example, something simple that anybody can relate to>
 
-### How does lightblue benefit operations?
+## How does lightblue benefit operations?
 One of the challenges with maintaining enterprise applications is ensuring they are always on.  When any change to a data structure requires application deployments it requires operations resources and can require outages to execute.  With lightblue any changes to a data structure is simply a change to metadata.
 * metadata updates are not software changes
 * metadata updates are guarenteed backwards compatible
@@ -69,7 +69,7 @@ Some other benefits beyond simply reducing operations overhead are:
 * lightblue is built to be both latency and fault tollerant
 * lightblue works with your preference of authentication and authorization
 
-### What about support and development tools?
+## What about support and development tools?
 If lightblue enables data access across many datasources and technologies we also need to provide tools to support that stack!  Enter the management applications:
 * Metadata Management Application
 * Data Management Application
@@ -78,16 +78,16 @@ If lightblue enables data access across many datasources and technologies we als
 
 Each of the applications provides access to the corresponding service layer.  The point of them is provide a nicer interface to the service layer without having to deal with the service directly.  Each application can be secured independent of the service tier, as noted in the diagram.
 
-## See lightblue in action!
+# See lightblue in action!
 * Deploy lightblue on OpenShift: [openshift-lightblue-all](https://github.com/lightblue-platform/openshift-lightblue-all)
 * Deploy lightblue with basic-auth:
 * Deploy lightblue with SAML 2.0:
 
-## License
+# License
 
 The license of lightblue is [GPLv3](https://www.gnu.org/licenses/gpl.html).  See COPYING in root of project for the full text.
 
-## Dependencies
+# Dependencies
 
 | Dependency | Why | License
 | ---------- | --- | -------
