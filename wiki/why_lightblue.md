@@ -1,6 +1,7 @@
 # Why lightblue?
 
-Developing enterprise services for access to data (CRUD) can be deceptively simple.  Just write something that gives access to the data you need.  Done!  The challenge is how do to deal with growth over time and not replicate the data access layer for every component.
+Lightblue enables development teams focus on the core business logic by providing a consistent, query based CRUD layer for data access.  Lightblue abstracts developers from the underlying data store, be it a NoSQL, RDBMS, LDAP or SaaS based repository, and provides a unified view of the data.  It also has the ability to provide SAML or certificate based authentication and fine grained authorization at an individual attribute/column level with a backing LDAP store.  What's great is you can pick and chose the modules you need for your specific purposes.  Lightblue stays true to SOA principles and is modular in structure.  If there isn't a plugin readily available, lightblue provides well defined interfaces to write a custom plugin.
+
 
 ## Why is it so hard to add a new field?
 * Adding a field may break backwards compatibility for clients.
@@ -29,3 +30,60 @@ The REST API of lightblue is designed to do everything a client could want.  The
 * Projection: return only the data a client wants
 * Bulk Operations: ability execute CRUD operations against many records or entire collections
 
+
+#### Datastore Agnostic
+Clients do not care where data is stored as long as it is available and secure.  With lightblue we have controller implementations for:
+* MongoDB (1.9.0 and higher)
+* RDBMS (ANSI SQL92)
+
+Not seeing a contoller you need?  We welcome new implementations and contributions in general!  From opening a request for enhancement to writing code, your ideas and help are greatly appricated.
+
+#### Versioned Metadata
+All data in lightblue is controlled by its metadata.  Think of this as all the DDL for a table in a relational database.
+Data structures are maintained by metadata.  A specific version of this metadata provides a window to the stored data.  You can have many versions of metadata active at a time, providing different clients with different windows to this data.  Key points to remember:
+* all data structures are captured as metadata
+* each data stucture can have multiple versions active at a time
+* each client views data with a specific version
+* clients using different versions are seeing the same data, just viewed through a different window
+
+<insert example, something simple that anybody can relate to>
+
+### How does lightblue benefit operations?
+One of the challenges with maintaining enterprise applications is ensuring they are always on.  When any change to a data structure requires application deployments it requires operations resources and can require outages to execute.  With lightblue any changes to a data structure is simply a change to metadata.
+* metadata updates are not software changes
+* metadata updates are guarenteed backwards compatible
+
+Some other benefits beyond simply reducing operations overhead are:
+* lightblue is designed to be deployed anywhere
+* lightblue employes a flexible component architecture that enables components to be deployed and scaled independently
+* lightblue is built to be both latency and fault tollerant
+* lightblue works with your preference of authentication and authorization
+
+### Update a single field without lightblue:
+![Slow](https://raw.github.com/lightblue-platform/lightblue/master/docs/slow.png)
+What does this really mean?
+1. Develop changes to code, which may include changing table structures and software configurations.
+2. Deploy to development environment and test the changes.  Probably manual tests.  And if it fails, this goes back to development.
+3. Once tests pass in development, deploy to QA.  Test again?
+4. Get a change request approved.  May require many layers of approval.  You're changing software!
+5. Approved and done in QA, now changes can be pushed to stage and production.. where they need verified again, probably manually.
+
+#### Update a single field *with* lightblue:
+![Fast](https://raw.github.com/lightblue-platform/lightblue/master/docs/fast.png)
+Looks like it's easier.. is it really?
+1. Create a new version of metadata with the updates.
+2. Deploy to dev then QA.
+3. Get a change request approved.  These changes will be proven to not break existing clients.  Expectation is approval process is less onerous.
+4. Deploy to stage and production.
+
+But what about testing?!?  Because of the versioned metadata no clients are impacted by the creation of a new metadata version.  Therefore, testing happens with whatever applications consume that new version.
+
+
+### What about support and development tools?
+If lightblue enables data access across many datasources and technologies we also need to provide tools to support that stack!  Enter the management applications:
+* Metadata Management Application
+* Data Management Application
+
+![Lightblue Applications](https://raw.githubusercontent.com/lightblue-platform/lightblue/master/docs/overview.png)
+
+Each of the applications provides access to the corresponding service layer.  The point of them is provide a nicer interface to the service layer without having to deal with the service directly.  Each application can be secured independent of the service tier, as noted in the diagram.
