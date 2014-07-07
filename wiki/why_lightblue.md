@@ -1,7 +1,14 @@
 # Why lightblue?
 
-Lightblue enables development teams focus on the core business logic by providing a consistent, query based CRUD layer for data access.  Lightblue abstracts developers from the underlying data store, be it a NoSQL, RDBMS, LDAP or SaaS based repository, and provides a unified view of the data.  It also has the ability to provide SAML or certificate based authentication and fine grained authorization at an individual attribute/column level with a backing LDAP store.  What's great is you can pick and chose the modules you need for your specific purposes.  Lightblue stays true to SOA principles and is modular in structure.  If there isn't a plugin readily available, lightblue provides well defined interfaces to write a custom plugin.
+True to SOA principles, lightblue brings choice to data administrators, operations, developers, and business users.
 
+Data administrators know that data is secure with optional plugable authentcation and authorization components.  This allows for consistent access control down to individual attributes / columns on all data even if the underlying technology doesn't support such controls!
+
+Operations has the flexibility to securely deploy lightblue anywhere.  Lightblue has been carefully architected to support the authentication and authorization you require while making it completely optional.
+
+Development teams can focus on the core business logic by providing a consistent query based CRUD layer for data access, providing unified view of your data.
+
+With versioned metadata protecting clients from changes to data structures the management of data structures can finally be offloaded from development teams to those that ask for those changes!  With enforcement of backwards compatible changes for minor changes, lightblue ensures that existing clients are both protected from other client changes and empowered to make changes knowing they cannot disrupt other applications.
 
 ## Why is it so hard to add a new field?
 * Adding a field may break backwards compatibility for clients.
