@@ -12,4 +12,6 @@
 * [Troubleshoot](troubleshoot/README.md)
 * [Dependencies](dependencies/README.md)
 * [License](license/README.md)
+* [Build from Source](build_source/README.md)
+* [Deploy lightblue on Fedora 20](deploy_lightblue_locally/README.md)
 
