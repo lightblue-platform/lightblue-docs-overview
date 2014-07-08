@@ -48,8 +48,10 @@ sudo yum install `find -name lightblue*.rpm`
 ```
 
 ## Uninstall!
-If you decide to uninstall, here's how to cleanup everything previously done..
+If you decide to uninstall, here's how to cleanup everything previously done.
 
 ```
-yum remove -y mongodb mongodb-server wildfly
+yum autoremove -y mongodb mongodb-server wildfly
+rm -rf /etc/wildfly /var/lib/wildfly /usr/share/wildfly
+rm -rf /etc/mongodb /var/lib/mongodb /usr/share/mongodb
 ```
