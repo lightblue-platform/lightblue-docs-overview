@@ -1,7 +1,7 @@
 # Contact Us
 
 ## GitHub
-Found a bug or have an idea to document?  Please open an issue on the approriate [appropriate project](project_structure/README).
+Found a bug or have an idea to document?  Please open an issue on the approriate appropriate project.
 
 
 ## IRC

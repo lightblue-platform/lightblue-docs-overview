@@ -4,4 +4,4 @@ The user guide includes:
 * REST API Specification
 * Example Usage
 
-It is published as a separate book, [lightblue User Guide]().
+It is published as a separate book, [lightblue User Guide](http://jewzaam.gitbooks.io/lightblue-user-guide/).
