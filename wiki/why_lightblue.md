@@ -2,7 +2,7 @@
 
 True to SOA principles, lightblue brings choice to data administrators, operations, developers, and business users.
 
-Data administrators and InfoSec know that data is secure with optional plugable authentcation and authorization components.  This allows for consistent access control down to individual attributes / columns on all data even if the underlying technology doesn't support such controls!
+Data administrators and InfoSec know that data is secure with optional pluggable authentication and authorization components.  This allows for consistent access control down to individual attributes / columns on all data even if the underlying technology doesn't support such controls!
 
 Operations has the flexibility to securely deploy lightblue anywhere.  Lightblue has been carefully architected to support the authentication and authorization you require while making it completely optional.
 
