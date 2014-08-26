@@ -10,5 +10,5 @@ Have a burning question that needs a human?  Chat with developers and users of l
 
 ## Forum / Email
 Can't get an answer either of those places?
-* Developer Forum: [lightblue-dev](http://lightblue-dev.1011138.n3.nabble.com)
-* Users Forum: [lightblue-users](http://lightblue-users.1011140.n3.nabble.com)
+* Developer Forum: [lightblue-dev](http://dev.forum.lightblue.io)
+* Users Forum: [lightblue-users](http://forum.lightblue.io)

@@ -8,4 +8,4 @@ The developer manual includes:
 * How to build and deploy lightblue
 * Troubleshooting
 
-It is published as a separate book, [lightblue Developer Manual](http://jewzaam.gitbooks.io/lightblue-developer-manual/).
+It is published as a separate book, [lightblue Developer Manual](http://dev.docs.lightblue.io).
