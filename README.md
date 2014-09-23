@@ -1,5 +1,5 @@
 # Introduction to lightblue
-This book is intended for those that want to know what lightblue is.  For those wanting more details please check out the User Guide and Developer Manual.
+This book is intended for those that want to know what lightblue is.  For those wanting more details please check out the [User Guide](http://docs.lightblue.io) and [Developer Manual](http://dev.docs.lightblue.io).
 
 ## The Challenge
 
