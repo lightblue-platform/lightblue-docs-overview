@@ -1,5 +1,5 @@
 # Use lightblue and give feedback
-One of the easiest ways to be involved is to [try out lightblue](https://github.com/lightblue-platform/openshift-lightblue-all) and let us know what you think.  Have an idea or find a bug?  Open a github issue.  Want to talk to someone live?  We hang out on Freenode in #lightblue.
+One of the easiest ways to be involved is to [try out lightblue](https://github.com/lightblue-platform/openshift-lightblue-cart) and let us know what you think.  Have an idea or find a bug?  Open a github issue.  Want to talk to someone live?  We hang out on Freenode in #lightblue.
 
 # Giving back
 Contribution means many things.  Many think it means writing code.  But the most important thing we could get from anybody is quite simple:  ideas.  We started this project with open minds for open and robust architecture.  Have an idea of how things could be better?   Let's talk!  Think there is some feature missing?  Log an issue and we can talk about it.  Areas we could always use help with:
