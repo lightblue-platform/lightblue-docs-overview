@@ -16,3 +16,10 @@ Cloud focused data services with dynamic querying, versioned schemas, and robust
 ![lightblue architecture](https://raw.githubusercontent.com/lightblue-platform/lightblue-docs/master/images/lightblue-puzzle.png "High Level Architecture")
 
 Lightblue is an open source project built from the ground up to be very flexible.  This plugin based component architecture enables deployment of lightblue in virtually any environment and with only the plugins needed enabled.  This bascially means you can deploy lightblue where you want and plug in the puzzle pieces you want!
+
+# Learn More!
+General introduction to lightblue:
+* [Enterprise Data Services in the Cloud with MongoDB](http://www.slideshare.net/jewzaam/lightblue)
+
+Overview of how migrations are happening from legacy systems to lightblue:
+* [lightblue Migrations](http://www.slideshare.net/derek63/lightblue-migration)
