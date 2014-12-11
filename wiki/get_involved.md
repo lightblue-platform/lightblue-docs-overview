@@ -16,4 +16,3 @@ Overall, a committer must be willing to help in any aspect of project's life-cyc
 
 Lightblue is a young project.  As of yet, we have added only a few committers the original team knows personally.  Want to join the ranks?  Please talk to us.  Help us define the path forward to adding committers!
 
-Issues ready for work: [![Stories in Ready](https://badge.waffle.io/lightblue-platform/lightblue.svg?label=ready&title=Ready)](http://waffle.io/lightblue-platform/lightblue)
