@@ -1,10 +1,13 @@
-[![Build Status](https://travis-ci.org/lightblue-platform/lightblue-core.svg?branch=master)](https://travis-ci.org/lightblue-platform/lightblue-core) [![Coverage Status](https://coveralls.io/repos/lightblue-platform/lightblue-core/badge.png?branch=master)](https://coveralls.io/r/lightblue-platform/lightblue-core?branch=master) [![Stories in Ready](https://badge.waffle.io/lightblue-platform/lightblue.svg?label=ready&title=Ready)](http://waffle.io/lightblue-platform/lightblue)
+[![Build Status](https://travis-ci.org/lightblue-platform/lightblue.svg?branch=master)](https://travis-ci.org/lightblue-platform/lightblue) [![Coverage Status](https://coveralls.io/repos/lightblue-platform/lightblue/badge.png?branch=master)](https://coveralls.io/r/lightblue-platform/lightblue?branch=master)
 
 # Books!
 
-* [Overview](http://jewzaam.gitbooks.io/lightblue/)
-* [User Guide](http://jewzaam.gitbooks.io/lightblue-user-guide/)
-* [Developer Manual](http://jewzaam.gitbooks.io/lightblue-developer-manual/)
+| Title | Summary |
+| ---- | ----------- |
+| [Overview](http://lightblue.io/) | New to lightblue?  Start here! |
+| [Specifications](http://jewzaam.gitbooks.io/lightblue-specifications/) | The language and REST specifications for lightblue. |
+| [User Guide](http://jewzaam.gitbooks.io/lightblue-user-guide/) | How to use lightblue including getting started quickly on [OpenShift](http://openshift.com). |
+| [Developer Manual](http://jewzaam.gitbooks.io/lightblue-developer-manual/) | Want to contribute?  Take a look at the other books and then dive into this manual! |
 
 
 # lightblue
@@ -52,7 +55,7 @@ Clients do not care where data is stored as long as it is available and secure. 
 Not seeing a contoller you need?  We welcome new implementations and contributions in general!  From opening a request for enhancement to writing code, your ideas and help are greatly appricated.
 
 #### Versioned Metadata
-All data in lightblue is controlled by its metadata.  Think of this as all the DDL for a table in a relational database.  
+All data in lightblue is controlled by its metadata.  Think of this as all the DDL for a table in a relational database.
 A specific version of this metadata provides a view of the stored data.  You can have many versions of metadata active at a time, providing different clients with different views of this data.  Key points to remember:
 * all data structures are captured as metadata
 * each data stucture can have multiple versions active at a time
